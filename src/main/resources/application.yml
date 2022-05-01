@@ -1,0 +1,5 @@
+logic:
+  name: localhost:8080 #logic-demo
+spring:
+  config:
+    import: optional:/etc/config/
