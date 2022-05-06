@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'build', '-t', 'ap-northeast-3-docker.pkg.dev/$PROJECT_ID/image-registry/$REPO_NAME:$SHORT_SHA', '.' ]
+images:
+  - 'ap-northeast-3-docker.pkg.dev/$PROJECT_ID/image-registry/$REPO_NAME:$SHORT_SHA'
